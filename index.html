@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section class="content-section" style="background:#edeeef; padding-top: 4rem; padding-bottom: 6rem">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          <div class="team-member" style="margin-bottom:24px">
+            <img src="images/about/res3.jpg" style="border:8px solid white; width:350px!important; height:100%" class="img-responsive img-circle" alt="reshmicr">
+            
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-8" id="intro-section" style="margin-bottom: 1rem; margin-top:1rem">
+            <h4>Reshmi C R</h4>
+            <p class="lead"><b>Computer Science Graduate, Machine Learning and Data Science Enthusiast</b></p>
+            <p class="lead" style="font-size: 14pt">
+                I'm a graduate in Computer Science with a strong foundation in data science and machine learning. My passion is utilizing AI and data to drive impactful solutions in the tech world.<br>
+                My interests include machine learning, artificial intelligence, statistical modeling, data analysis, and natural language processing.
+            </p>
+            <p class="lead" style="font-size: 14pt">
+                I have completed a Postgraduate degree in Computer Science with a focus on AI and hold a Data Science certification from the ICT Academy of Kerala.
+            </p>
+            
+            <ul style="padding-left:30px">
+              <li class="lead" style="font-size: 14pt"><b>Master of Science in Computer Science/Data Anaytics</b></li>
+              <li class="lead" style="font-size: 14pt"><b>Bachelor of Science in Mathematics</b></li>
+              <li class="lead" style="font-size: 14pt">Certificate of Data Science and Analytics</li>
+            </ul>
+          </div>
+          
+      </div>
+    </div>
+      
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Personal Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/1.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="lead"><b>Hate Speech Detection in YouTube Comments</b></h5>
+            <p class="lead">Leveraging natural language processing, this project focuses on identifying and categorizing hate speech within YouTube comments. By building a classification model, I was able to filter out offensive content and label comments as either 'Hate Speech' or 'Safe,' promoting a safer online community.</p>
+            
+            <a href="https://github.com/Reshmi9566/hate-speech-detection-youtube-comments
+            " class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/2.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="lead"><b>Delivery Time Prediction</b></h5>
+            <p class="lead">This project involved predicting delivery times for an online food delivery service based on multiple variables like distance, traffic conditions, and order preparation time. By developing a predictive model, I improved the accuracy of delivery time estimates, enhancing user experience and operational efficiency..</p>
+            
+            <a href="https://github.com/Reshmi9566/Delivery-time-prediction
+            " class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/3.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="lead"><b>Loan Status Approval</b></h5>
+            <p class="lead">In this project, I built a predictive model to assess loan applications and determine their approval status. Using customer data, I was able to classify loan applications as either 'Approved' or 'Rejected,' helping financial institutions make faster, data-driven decisions.</p>
+            
+            <a href="https://github.com/Reshmi9566/Loan_Prediction" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="text-center">
+        <p class="lead">Below are some of my skills, and I'm always looking to learn more.</p>
+      </div>
+      
+    <div class="row justify-content-center">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/1.png" class="card-img-top" alt="Python">
+          <div class="card-body text-center">
+            <h5 class="lead"><b>Python</b></h5>
+            <p class="lead">I am proficient in Python and utilize libraries like Pandas, NumPy, and Scikit-learn for data analysis and machine learning. My expertise allows me to write efficient code and develop applications that solve complex problems effectively.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/2.png" class="card-img-top" alt="SQL">
+          <div class="card-body text-center">
+            <h5 class="lead"><b>SQL</b></h5>
+            <p class="lead">I have strong expertise in SQL, enabling effective management and manipulation of relational databases. I can write complex queries to extract insights from large datasets and design schemas for databases like MySQLto support data-driven decisions.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/3.png" class="card-img-top" alt="Machine Learning Algorithms">
+          <div class="card-body text-center">
+            <h5 class="lead"><b>Machine Learning Algorithms</b></h5>
+            <p class="lead">Proficient in supervised and unsupervised learning techniques, including regression, classification, clustering, and recommendation systems. Used these skills in projects like loan status prediction and hate speech detection.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/4.png" class="card-img-top" alt="Natural Language Processing (NLP)">
+          <div class="card-body text-center">
+            <h5 class="lead"><b>Natural Language Processing (NLP)</b></h5>
+            <p class="lead">Skilled in NLP techniques, including tokenization, sentiment analysis, and text classification. Developed models for detecting hate speech in YouTube comments using advanced NLP methods.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Contact Me Section -->
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <p><i class="fas fa-envelope"></i> 
+            <a href="mailto:reshmicr008@gmail.com">
+                <b>Email:</b> 
+                <span style="color: #d6d449;">reshmicr008@gmail.com</span>
+              </a>
+          </p>
+          
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-4 mb-4">
+            <a href="https://www.linkedin.com/in/reshmicr/" target="_blank">
+              <img src="icons/1.png" alt="GitHub" class="social-icon">
+            </a>
+          </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <a href="https://github.com/Reshmi9566" target="_blank">
+            <img src="icons/3.png" alt="GitHub" class="social-icon">
+          </a>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name *">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email *" >
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Phone">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message *"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <footer class="footer" style="padding-top: 4rem; padding-bottom: 2rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <span class="copyright">Copyright © Reshmi C R 2024
+                </span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline mb-4" style="margin-top:-12px">
+                  
+                  <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="www.linkedin.com/in/reshmicr" target="blank">
+                      <i class="icon-social-linkedin"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="https://github.com/Reshmi9566" target="blank">
+                      <i class="icon-social-github"></i>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks d-flex justify-content-center">
+                    <li class="mr-3">
+                      <a href="#about" class="js-scroll-trigger"><b>About</b></a>
+                    </li>
+                    <li>
+                      <a href="#contact" class="js-scroll-trigger"><b>Contact</b></a>
+                    </li>
+                  </ul>
+                  
+            </div>
+        </div>
+    </div>
+</footer>
+
+  
+
+
+
+  
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#intro-section">About</a> <!-- Updated href -->
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
